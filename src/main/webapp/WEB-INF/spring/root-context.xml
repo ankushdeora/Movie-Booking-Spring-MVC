@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="userValidator" class="com.me.finalPro.validator.UserValidator"></bean>
+	<bean id="userDao" class="com.me.finalPro.dao.UserDAO" ></bean>
+	
+	<bean id="movieDao" class="com.me.finalPro.dao.MovieDAO" ></bean>
+	
+	<bean id="theatreDao" class="com.me.finalPro.dao.TheatreDAO" ></bean>
+	
+	<bean id="screenDao" class="com.me.finalPro.dao.ScreenDAO" ></bean>
+	
+	<bean id="movieCsvDao" class="com.me.finalPro.dao.MovieCsvDAO"></bean>
+	
+	<bean id="bookingDao" class="com.me.finalPro.dao.BookingDAO" ></bean>
+	
+</beans>
